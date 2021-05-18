@@ -1,0 +1,60 @@
+Three steps in routing:
+ Step 1: Wrap your very first component or major component(i.e App) in the component tree in a 
+ {BrowserRouter}component.
+ This  {BrowserRouter} comes under react router dom.
+ whatever you write it should be insdie {BrowserRouter}.
+ for ex.<BrowserRouter>
+        <App/>
+        <BrowserRouter/>   => gives all the functionality of routing.
+
+ Step 2: Define {Route} for our component,we can use this {Route}  to display info depending on the 
+ URL on the URL bar.
+if someone is writing www. -----.com/ .... => then route this component
+
+Step 3 : Control the URL with the {NavLink , Link} component.
+
+ we need to provide path and component on which you want to render ..in route
+/ means nothing only website
+after deletion particular component that also shown on website
+
+All routes are in one file and that is also in parent file
+
+/ it will always render home and then particular component=> it checks all the routes
+
+for redirect we have redirect in router dom
+when we use redirect form / to /home then after writing /about it is still redirecting on home 
+because it checks all route it matches that runs and again it comes to redirect where it go to home
+
+exaxt in route will only work with that route .with same thing
+whatever redirect running at end will run that.
+****Solution to this is Switch as soon as it matches with one route it will not go n check 
+for others.
+** if nothing matches then redirect to error page
+if you dont give from then nothing will match go on this page
+
+
+11 May:
+<a> tag ...when we click on something browser is making request to server.
+Server will send that particular file to you.
+If the file is large it will take time to get loaded on your browser.
+Solution: Use NavLink or Link
+It will not make another request for same file.
+It will take from the same file which is already there will not make new request like <a>.
+
+
+Diffrence between NavLink and Link :
+NavLink ==>comes with default class :active class but we have to give css in this class .
+whenever we click that active class get applied over there.
+Link ==>>doesnt comes up with default class
+
+
+Dynamic Routes==>> code changes in url www.newtonschool.com/dashboard/rgygdvgdv/timeline
+dhbcdhvvbdv-code coming from database
+
+part of url will same for everyone ...some part is unique for everyone
+
+filter stores in array
+
+data.find will iterate through data.json and it will check for condition and if condition matchesit will
+it will not check for others.It will not check another item.
+But filter iterates through all the items whichever matches it will put that into array.
